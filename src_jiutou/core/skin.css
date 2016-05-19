@@ -1,0 +1,150 @@
+/*p:style/skin/default/*/
+
+/*f:skin.css*/
+
+/*
+runTime: 0.0010
+
+fileTree:
+ +---- skin.css
+ |  +---- ../public/base.css
+*/
+@charset 'utf-8';
+
+/*====特殊字色====*/
+.S_spetxt,/*.S_error,*/
+a.S_ficon:hover, a:hover .S_ficon, a.current .S_ficon { color: #fa7d3c; }
+.S_error { color: #f00; }
+.S_spetxt_bg { background-color: #fa7d3c; }
+.W_btn_prev:hover, .W_btn_next:hover { border-color: #fa7d3c; }
+
+/*====特殊文字效果====*/
+.W_btn_prev:hover, .W_btn_next:hover, a.S_ficon:hover, a:hover .S_ficon, a.current .S_ficon, a.S_txt1:hover, a.current .S_txt1, a.S_txt2:hover, .SW_fun:hover .S_func1 { text-decoration: none; cursor: pointer; }
+.S_ficon_dis, a.S_ficon_dis:hover, a:hover .S_ficon_dis { cursor: default; opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50); }
+
+/*===时间轴===*/
+.WB_timeline .current em { color: #fff; }
+
+/*发布器*/
+.send_weibo { background-image: none; }
+
+/*顶部 大背景图*/
+.WB_miniblog { padding-top: 50px; }
+.S_page .WB_miniblog { padding-top: 50px; }
+
+/*====page页去遮罩====*/
+.S_page .WB_frame { background-color: transparent !important; }
+#js_skin_public_base { height: 42px; }
+
+/*背景颜色或背景平铺图*/
+body, .S_page { background-color: #d4d5e0; background-image: url(images/body_repeat.png?id=1410943047113); background-repeat: repeat-x; background-position: center 0; }
+
+/*===发布器slogan字色===*/
+.send_weibo .ficon_swtxt { color: #808080; }
+
+/*====主文字====含同色系的线、面*/
+body, legend, .W_input:focus, .S_txt1, .W_btn_b, .SW_fun .S_func1 { color: #333; text-decoration: none; }
+.S_txt1_bg { background-color: #333; }
+.S_txt1_br { border-color: #333; }
+
+/*====二级文字====含同色系的线、面*/
+.S_txt2, .W_input, .W_btn_b_disable, .W_btn_b_disable:hover { color: #808080; text-decoration: none; }
+.S_txt2_bg { background-color: #808080; }
+.S_txt2_br { border-color: #808080; }
+
+/*====icon色====含同色系的线、面*/
+.S_ficon, .S_ficon_dis, a.S_ficon_dis:hover, a:hover .S_ficon_dis { color: #696e78; }
+.S_ficon_bg { background-color: #696e78; }
+.S_ficon_br { border-color: #696e78; }
+
+/*====一级链接====含同色系的线、面*/
+a, .S_link1, a.S_txt1:hover, a.current .S_txt1, a.S_txt2:hover, .SW_fun:hover .S_func1 { color: #eb7350; }
+.S_link1_bg { background-color: #eb7350; }
+.S_link1_br { border-color: #eb7350; }
+
+/*===背景色块1===*/
+.S_bg1, .SW_fun_bg:hover, .SW_fun_bg_active { background-color: #f6f6f6; }
+.S_bg1_c { color: #f6f6f6; }
+.S_bg1_br { border-color: #f6f6f6; }
+.W_btn_cardlink, .W_btn_tag_cur, .W_btn_tag_cur:hover { background-color: #f6f6f6 !important; }
+
+/*===背景色块2===*/
+.S_bg2, blockquote, .W_btn_b, .W_input, .SW_fun_bg { background-color: #fff; }
+.S_bg2_c { color: #fff; }
+.S_bg2_br { color: #fff; border-color: #fff; }
+
+/*===一级线色===*/
+.S_line1, .W_btn_prev, .W_btn_next, .W_btn_b { border-color: #d9d9d9; }
+.W_btn_b_disable, .W_btn_b_disable:hover, .W_btn_tag_cur, .W_btn_tag_cur:hover { border-color: #d9d9d9 !important; }
+.S_line1_c { color: #d9d9d9; }
+.W_btn_b_disable .S_ficon { color: #d9d9d9 !important; }
+
+/*===二级线色===*/
+.S_line2 { border-color: #f2f2f5; }
+.S_line2_c { color: #f2f2f5; }
+
+/*===三级线色（输入框）===*/
+.S_line3, .W_input, .send_weibo .input, .W_btn_b:hover { border-color: #cccccc; }
+
+/*===发布器背景色===*/
+.W_input, .send_weibo .input { background-color: #fff; }
+
+/*===左导（字色换算成十进制后，以下4个相同）===*/
+.WB_left_nav .S_ficon, .WB_left_nav .S_txt1 { color: #333; }
+.WB_left_nav a.S_txt1:hover, .WB_left_nav a:hover .S_ficon, .WB_left_nav .lev_curr, .WB_left_nav .lev_curr .S_ficon, .WB_left_nav a.S_ficon:hover { color: #eb7350; }
+.WB_left_nav .lev a:hover, .WB_left_nav .lev_curr, .WB_left_nav .lev_curr:hover, .WB_left_nav .levmore .more { background-color: #f2f1f6; }
+.WB_left_nav .lev_Box, .WB_left_nav fieldset { border-color: #c9c9cb; *border-color: #c9c9cb; background-color: #fff; border-radius: 4px; padding: 6px 0; }
+
+/*==首页遮罩.WB_frame{ background-color:#a8afb9;background-color:rgba(36,61,89,0.25);*background-color:#a8afb9;}==*/
+
+/*===时间轴（以下3个相同）===*/
+.WB_timeline .S { color: #696e78; border-left-color: #696e78; }
+.WB_timeline .current em, .WB_timeline .S_dot, .W_gotop { background-color: #696e78; }
+
+/*顶部 大背景图*/
+
+/*.WB_miniblog{background:url(images/body_bg.jpg?id=20140928183500) no-repeat top center;}*/
+
+/*.S_page .WB_miniblog{background:url(images/body_bg_page.jpg?id=20140928183500) no-repeat top center;}*/
+
+#js_skin_default_skin { height: 42px; }
+
+/*logo图字补丁*/
+.gn_logo .S_txt1{font-size: 16px;font-weight: 600;}
+.WB_global_nav .gn_nav_list li{margin-left: 10px;}
+
+/*btn*/
+.btn_center{text-align: center;padding: 20px 0;}
+
+/* 表格 */
+.table { width: 100%; }
+.table th { background-color: #fec09e; line-height: 26px; }
+.table td, .table th { text-align: left; padding: 8px 6px; }
+.table tr.unread{font-weight: 800;}
+.table td { color: #555; }
+.table>tbody>tr:nth-of-type(even) { background-color: #f6f6f6; }
+.tablewrap .W_pages { margin-top: 10px; }
+.tip_msg { background-color: #fffee6; border: 1px solid #fedc7d; color: #808080; padding: 10px; margin: 10px 0; }
+.tip_msg_s { background-color: #fffee6; border: 1px solid #fedc7d; color: #808080; padding: 4px; margin: 10px 0; }
+.tip_msg_s .W_icon { vertical-align: middle; margin-right: 3px; margin-top: -1px; }
+.WB_innerwrap { min-height: 200px; position: relative; padding-bottom: 60px; }
+.WB_cardwrap h2 { padding-top: 8px; padding-bottom: 4px; }
+.info_title { display: inline-block; width: 200px; text-align: right; }
+.info_text { }
+.lineHeight28 { line-height: 28px; }
+.info_text .W_btn_tag { margin: 5px 5px;}
+.margin_t20 { margin-top: 20px; }
+.margin_b5 { margin-bottom: 5px; }
+.margin_r10 { margin-right: 10px; }
+.margin_tF5 { margin-top: -5px; width: 500px;}
+.W_input_b { width: 250px; }
+form .btn_30px { height: 30px; }
+.form_control { overflow: hidden; margin-bottom: 10px; }
+.form_control .info_title { float: left; line-height: 28px; }
+.form_control .info_text { float: left; max-width: 72%; }
+.form_control .info_text .S_txt2 { padding-top: 6px;}
+textarea.W_input { height: 68px; width: 100%; }
+.form_bottom_action { background-color: #f2f2f5; padding: 10px 0; text-align: center; position: absolute; bottom: 0; width: 100%; left: 0; }
+.info_list { overflow: hidden; margin-bottom: 5px; }
+.info_list .info_title { float: left; width: 30%; text-align: right; margin-right: 2%; }
+.info_list .info_text { float: left; text-align: left; width: 65%; }

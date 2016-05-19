@@ -20,33 +20,38 @@ function getDefaultModules() {
       {
         test: /\.(js|jsx)$/,
         include: srcPath,
-        loader: 'eslint-loader'
+        loader: 'eslint-loader'  // eslint 进行校验  保证最先执行
       }
     ],
-    loaders: [
+    loaders: [    // loaders
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
       },
       {
         test: /\.sass/,
-        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'
+        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'  
+        // expanded 类ruby写法
       },
       {
         test: /\.scss/,
-        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
       },
       {
         test: /\.less/,
         loader: 'style-loader!css-loader!less-loader'
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         test: /\.styl/,
         loader: 'style-loader!css-loader!stylus-loader'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
-        loader: 'url-loader?limit=8192'
+        test: /\.(png|jpg|gif|woff|woff2)$/,  // 后缀为这些时，使用 url_loader_20160322
+        loader: 'url-loader?limit=8192'   // 图片小于 8mb 时，采用 base64编码格式
       },
       {
         test: /\.(mp4|ogg|svg)$/,

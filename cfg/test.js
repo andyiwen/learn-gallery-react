@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.(js|jsx)$/,
-        loader: 'babel-loader',
+        loader: 'babel-loader',  // transpiling  compiling
         include: [].concat(
           baseConfig.additionalPaths,
           [
