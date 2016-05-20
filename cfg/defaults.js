@@ -26,16 +26,16 @@ function getDefaultModules() {
     loaders: [    // loaders
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}'
       },
-      {
-        test: /\.sass/,
-        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'  
-        // expanded 类ruby写法
-      },
+      // {
+      //   test: /\.sass/,
+      //   loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'  
+      //   // expanded 类ruby写法
+      // },
       {
         test: /\.scss/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}!sass-loader?outputStyle=expanded'
       },
       {
         test: /\.less/,
