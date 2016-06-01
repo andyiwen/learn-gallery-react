@@ -96,11 +96,6 @@ class AppComponent extends React.Component {
   //     }
   //   }
   // }
-  constructor(){
-    this.abc:{
-      
-    }
-  };
   static Constant: {  
     centerPos: {
         left: 0,
