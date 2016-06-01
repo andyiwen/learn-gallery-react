@@ -20,7 +20,6 @@ function getDefaultModules() {
       {
         test: /\.(js|jsx)$/,
         include: srcPath,
-<<<<<<< HEAD
         loader: 'eslint-loader'  // transpiling compiling
       }
     ],
@@ -36,48 +35,18 @@ function getDefaultModules() {
       {
         test: /\.scss/,
         loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
-=======
-        loader: 'eslint-loader'  // eslint 进行校验  保证最先执行
-      }
-    ],
-    loaders: [    // loaders
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}'
-      },
-      // {
-      //   test: /\.sass/,
-      //   loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'  
-      //   // expanded 类ruby写法
-      // },
-      {
-        test: /\.scss/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}!sass-loader?outputStyle=expanded'
->>>>>>> origin/master
       },
       {
         test: /\.less/,
         loader: 'style-loader!css-loader!less-loader'
       },
       {
-<<<<<<< HEAD
-=======
-        test: /\.json$/,
-        loader: 'json-loader'
-      },
-      {
->>>>>>> origin/master
         test: /\.styl/,
         loader: 'style-loader!css-loader!stylus-loader'
       },
       {
-<<<<<<< HEAD
         test: /\.(png|jpg|gif|woff|woff2)$/,  // 后缀为这些时，使用url-loader_20160511
         loader: 'url-loader?limit=8192'   // 图片小于 8mb 时，采用base64编码格式
-=======
-        test: /\.(png|jpg|gif|woff|woff2)$/,  // 后缀为这些时，使用 url_loader_20160322
-        loader: 'url-loader?limit=8192'   // 图片小于 8mb 时，采用 base64编码格式
->>>>>>> origin/master
       },
       {
         test: /\.(mp4|ogg|svg)$/,
