@@ -113,21 +113,21 @@ class AppComponent extends React.Component {
   };
 
   // 3-3 
-  // Constant: {  // 3-3 04:38
-  //   centerPos: {
-  //       left: 0,
-  //       right: 0
-  //   },
-  //   hPosRange: {   // 水平方向的取值范围
-  //       leftSecX: [0, 0],
-  //       rightSecX: [0, 0],
-  //       y: [0, 0]
-  //   },
-  //   vPosRange: {    // 垂直方向的取值范围
-  //       x: [0, 0],
-  //       topY: [0, 0]
-  //   }
-  // },
+  Constant: {  // 3-3 04:38
+    centerPos: {
+        left: 0,
+        right: 0
+    },
+    hPosRange: {   // 水平方向的取值范围
+        leftSecX: [0, 0],
+        rightSecX: [0, 0],
+        y: [0, 0]
+    },
+    vPosRange: {    // 垂直方向的取值范围
+        x: [0, 0],
+        topY: [0, 0]
+    }
+  },
   
   // Constant(){
 
